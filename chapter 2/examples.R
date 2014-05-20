@@ -1,5 +1,5 @@
 getwd()
-setwd("/home/fwang/R-books/Machine_Learning_with_R/chapter 2")
+setwd("/home/fwang/Machine-Learning-with-R/chapter 2")
 usedcars=read.csv("usedcars.csv",stringsAsFactor=FALSE)
 str(usedcars)
 summary(usedcars$year)
@@ -38,3 +38,4 @@ library(gmodels)
 usedcars$conservative=usedcars$color%in% c("Black","Gray","Silver","White")
 table(usedcars$conservative)
 CrossTable(x=usedcars$model,y=usedcars$conservative)
+
